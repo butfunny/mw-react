@@ -1,27 +1,31 @@
-module.exports = {
-    entry: "./src/index.tsx",
+var path = require("path");
+var config = {
+
+    entry: ["./src/app.tsx"],
     output: {
-        filename: "bundle.js",
-        path: __dirname + "/dist"
+        path: __dirname + "/build",
+        filename: "bundle.js"
     },
 
-    devtool: "source-map",
     resolve: {
-        extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+        extensions: ["", ".ts", ".tsx", ".js"]
     },
 
     module: {
         loaders: [
-            { test: /\.tsx?$/, loader: "ts-loader" }
-        ],
-
-        preLoaders: [
-            { test: /\.js$/, loader: "source-map-loader" }
+            {
+                test: /\.tsx?$/,
+                loader: "ts-loader",
+                exclude: /node_modules/
+            }
         ]
     },
-
-    externals: {
-        "react": "React",
-        "react-dom": "ReactDOM"
-    },
+    devServer: {
+        hot: true,
+        inline: true,
+        port: "3000",
+        host: "localhost"
+    }
 };
+
+module.exports = config;

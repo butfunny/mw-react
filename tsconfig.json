@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "noImplicitAny": true,
+    "types": ["node"],
+    "jsx": "react",
     "module": "commonjs",
-    "target": "es5",
-    "jsx": "react"
+    "noImplicitAny": false,
+    "outDir": "./build/",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "target": "ES5"
   },
-  "filesGlob": [
-    "./src/**/*.ts*"
+  "exclude": [
+    "node_modules",
+    "./typings/typings.d.ts"
   ]
 }

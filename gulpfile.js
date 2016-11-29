@@ -23,7 +23,7 @@ var injectScss = function() {
     var target = gulp.src('./assets/scss/style.scss');
 
     var sort = require('gulp-sort');
-    var sources = gulp.src(["./src/components/**/*.scss"], {read: false}).pipe(sort());
+    var sources = gulp.src(["./src/app/**/*.scss"], {read: false}).pipe(sort());
 
     var inject = require("gulp-inject");
     target
