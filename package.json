@@ -1,0 +1,36 @@
+{
+  "name": "mw-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/butfunny/mw-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/butfunny/mw-react/issues"
+  },
+  "homepage": "https://github.com/butfunny/mw-react#readme",
+  "dependencies": {
+    "@types/react": "^0.14.51",
+    "@types/react-dom": "^0.14.19",
+    "chokidar": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sort": "^2.0.0",
+    "q": "^1.4.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "devDependencies": {
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^1.2.2"
+  }
+}
